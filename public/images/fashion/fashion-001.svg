@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1250" viewBox="0 0 1000 1250">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#101014"/>
+      <stop offset="0.55" stop-color="#161020"/>
+      <stop offset="1" stop-color="#0a0a0c"/>
+    </linearGradient>
+    <radialGradient id="v" cx="0.5" cy="0.42" r="0.78">
+      <stop offset="0.5" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.55"/>
+    </radialGradient>
+  </defs>
+  <rect width="1000" height="1250" fill="url(#g)"/>
+  <rect width="1000" height="1250" fill="url(#v)"/>
+  <g fill="none" stroke="#c9a96a">
+    <circle cx="500" cy="625" r="160.0" stroke-width="1" stroke-opacity="0.5"/>
+    <circle cx="500" cy="625" r="115.0" stroke-width="0.75" stroke-opacity="0.35"/>
+    <line x1="615.0" y1="625.0" x2="660.0" y2="625.0" stroke-width="0.75" stroke-opacity="0.35"/><line x1="557.5" y1="724.6" x2="580.0" y2="763.6" stroke-width="0.75" stroke-opacity="0.35"/><line x1="442.5" y1="724.6" x2="420.0" y2="763.6" stroke-width="0.75" stroke-opacity="0.35"/><line x1="385.0" y1="625.0" x2="340.0" y2="625.0" stroke-width="0.75" stroke-opacity="0.35"/><line x1="442.5" y1="525.4" x2="420.0" y2="486.4" stroke-width="0.75" stroke-opacity="0.35"/><line x1="557.5" y1="525.4" x2="580.0" y2="486.4" stroke-width="0.75" stroke-opacity="0.35"/>
+  </g>
+  <rect x="45.0" y="45.0" width="910.0" height="1160.0" fill="none" stroke="#c9a96a" stroke-opacity="0.16" stroke-width="1"/>
+  <text x="500" y="425.0" text-anchor="middle" fill="#c9a96a" fill-opacity="0.85" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="55.0">01</text>
+  <text x="500" y="875.0" text-anchor="middle" fill="#f2ede4" fill-opacity="0.5" font-family="Arial, Helvetica, sans-serif" font-size="26.0" letter-spacing="12.0">FASHION</text>
+  <text x="500" y="1175.0" text-anchor="middle" fill="#f2ede4" fill-opacity="0.22" font-family="Arial, Helvetica, sans-serif" font-size="19.0" letter-spacing="2">placeholder — replace with your own photo</text>
+</svg>

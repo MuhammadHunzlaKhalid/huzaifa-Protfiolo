@@ -1,0 +1,257 @@
+{
+  "_readme": "This file is the single place where you manage ALL website content. See CONTENT_GUIDE.md for step-by-step instructions. Fields you leave empty are simply hidden — nothing breaks.",
+
+  "site": {
+    "name": "Huzaifa",
+    "role": "Photographer & Videographer",
+    "location": "Lahore, Pakistan"
+  },
+
+  "hero": {
+    "name": "Huzaifa",
+    "title": "Photographer & Videographer",
+    "tagline": "Turning Moments Into Stories.",
+    "heroImage": "/images/photography/IMG_0013.PNG",
+    "heroVideo": "",
+    "stats": [
+      { "value": 50, "suffix": "+", "label": "Projects" },
+      { "value": 20, "suffix": "+", "label": "Clients" },
+      { "value": 3, "suffix": "+", "label": "Years Experience" }
+    ]
+  },
+
+  "showreel": {
+    "title": "Watch The Story",
+    "quote": "A collection of frames, emotions and stories captured through my lens.",
+    "poster": "/images/showreel/IMG_0022.jpg",
+    "video": "/videos/IMG_0022.MP4",
+    "externalUrl": ""
+  },
+
+  "about": {
+    "portrait": "/images/photography/IMG_0016.jpg",
+    "overline": "About The Artist",
+    "heading": "Behind the Camera",
+    "bio": [
+      "I'm Huzaifa — a photographer and videographer who believes every frame should feel something. What began with a single camera and a fascination for light has grown into a full storytelling practice covering weddings, fashion, portraits and brand films.",
+      "My approach is quiet and observant: I watch for the in-between moments — the glance, the breath before the vow, the wind catching fabric — and craft them into images and films that feel cinematic yet honest. From the first conversation to the final delivery, everything is handled with care, calm and an obsession with detail."
+    ],
+    "skills": ["Photography", "Videography", "Cinematic Storytelling"],
+    "location": "Lahore, Pakistan"
+  },
+
+  "categories": ["All", "Photography", "Videography"],
+
+  "featured": [],
+
+  "services": [
+    { "title": "Wedding Photography", "icon": "Camera", "description": "Timeless, honest coverage of your day — from quiet morning preparations to the last dance." },
+    { "title": "Portrait Photography", "icon": "Aperture", "description": "Editorial and classic portraits that reveal character, crafted with light and patience." },
+    { "title": "Event Photography", "icon": "Sparkles", "description": "Conferences, launches and celebrations — every key moment, candid and composed." },
+    { "title": "Product Photography", "icon": "ShoppingBag", "description": "Clean, considered product imagery built for stores, campaigns and print." },
+    { "title": "Wedding Films", "icon": "Heart", "description": "Cinematic wedding films with sound, voice and motion — memories you can replay forever." },
+    { "title": "Commercial Videos", "icon": "Briefcase", "description": "Brand videos that communicate value — scripted, produced and delivered for real channels." },
+    { "title": "Social Media Content", "icon": "Megaphone", "description": "Scroll-stopping vertical content, shot and edited for Instagram, TikTok and YouTube." },
+    { "title": "Cinematic Films", "icon": "Clapperboard", "description": "Short films and documentaries with a narrative heart and a cinematic finish." }
+  ],
+
+  "testimonials": [
+    {
+      "quote": "Huzaifa didn't just photograph our wedding — he understood it. Every time we watch the film we're back in that evening. Worth every rupee.",
+      "name": "Ayesha & Bilal",
+      "role": "Wedding, Lahore"
+    },
+    {
+      "quote": "A true professional with the eye of an artist. The editorial series elevated our entire seasonal campaign.",
+      "name": "Sana Malik",
+      "role": "Creative Director, Maison"
+    },
+    {
+      "quote": "Calm, invisible when he needs to be, and directive when the shot demands it. The gala images were stunning.",
+      "name": "Omar Sheikh",
+      "role": "Event Head, Serene Group"
+    },
+    {
+      "quote": "Our brand film still gives people goosebumps. Clear process, beautiful output, delivered ahead of schedule.",
+      "name": "Zara Ahmed",
+      "role": "Founder, Aurum Skincare"
+    }
+  ],
+
+  "social": {
+    "instagram": "https://www.instagram.com/huzaifakhalid__?stkn=MXhpdm80Mnp6NnFtaA==",
+    "instagramHandle": "@huzaifakhalid__",
+    "youtube": "https://www.youtube.com/@Naruto-Team7-s7/shorts",
+    "youtubeLabel": "@Naruto-Team7-s7",
+    "youtube2": "https://www.youtube.com/@OnePiece-S56",
+    "youtube2Label": "@OnePiece-S56",
+    "whatsapp": "+92 344 4666454",
+    "email": "huzaifakhalid084@gmail.com"
+  },
+
+  "contact": {
+    "heading": "Have a story worth capturing?",
+    "cta": "Let's Work Together",
+    "availability": "Now booking for 2026 – 2027",
+    "location": "Lahore, Pakistan"
+  },
+
+  "projects": [
+    {
+      "id": "gcu-lahore",
+      "title": "",
+      "category": "Videography",
+      "location": "",
+      "year": "",
+      "services": [],
+      "coverImage": "/images/videography/IMG_0022.jpg",
+      "images": [],
+      "videos": ["/videos/IMG_0022.MP4"],
+      "externalVideos": [],
+      "description": ""
+    },
+    {
+      "id": "photo-08",
+      "title": "",
+      "category": "Photography",
+      "location": "",
+      "year": "",
+      "services": [],
+      "coverImage": "/images/photography/IMG_0008.PNG",
+      "images": ["/images/photography/IMG_0008.PNG"],
+      "videos": [],
+      "externalVideos": [],
+      "description": ""
+    },
+    {
+      "id": "photo-09",
+      "title": "",
+      "category": "Photography",
+      "location": "",
+      "year": "",
+      "services": [],
+      "coverImage": "/images/photography/IMG_0009.PNG",
+      "images": ["/images/photography/IMG_0009.PNG"],
+      "videos": [],
+      "externalVideos": [],
+      "description": ""
+    },
+    {
+      "id": "photo-10",
+      "title": "",
+      "category": "Photography",
+      "location": "",
+      "year": "",
+      "services": [],
+      "coverImage": "/images/photography/IMG_0010.PNG",
+      "images": ["/images/photography/IMG_0010.PNG"],
+      "videos": [],
+      "externalVideos": [],
+      "description": ""
+    },
+    {
+      "id": "photo-11",
+      "title": "",
+      "category": "Photography",
+      "location": "",
+      "year": "",
+      "services": [],
+      "coverImage": "/images/photography/IMG_0011.PNG",
+      "images": ["/images/photography/IMG_0011.PNG"],
+      "videos": [],
+      "externalVideos": [],
+      "description": ""
+    },
+    {
+      "id": "photo-12",
+      "title": "",
+      "category": "Photography",
+      "location": "",
+      "year": "",
+      "services": [],
+      "coverImage": "/images/photography/IMG_0012.PNG",
+      "images": ["/images/photography/IMG_0012.PNG"],
+      "videos": [],
+      "externalVideos": [],
+      "description": ""
+    },
+    {
+      "id": "photo-13",
+      "title": "",
+      "category": "Photography",
+      "location": "",
+      "year": "",
+      "services": [],
+      "coverImage": "/images/photography/IMG_0013.PNG",
+      "images": ["/images/photography/IMG_0013.PNG"],
+      "videos": [],
+      "externalVideos": [],
+      "description": ""
+    },
+    {
+      "id": "photo-14",
+      "title": "",
+      "category": "Photography",
+      "location": "",
+      "year": "",
+      "services": [],
+      "coverImage": "/images/photography/IMG_0014.PNG",
+      "images": ["/images/photography/IMG_0014.PNG"],
+      "videos": [],
+      "externalVideos": [],
+      "description": ""
+    },
+    {
+      "id": "photo-15",
+      "title": "",
+      "category": "Photography",
+      "location": "",
+      "year": "",
+      "services": [],
+      "coverImage": "/images/photography/IMG_0015.PNG",
+      "images": ["/images/photography/IMG_0015.PNG"],
+      "videos": [],
+      "externalVideos": [],
+      "description": ""
+    },
+    {
+      "id": "photo-16",
+      "title": "",
+      "category": "Photography",
+      "location": "",
+      "year": "",
+      "services": [],
+      "coverImage": "/images/photography/IMG_0016.PNG",
+      "images": ["/images/photography/IMG_0016.PNG"],
+      "videos": [],
+      "externalVideos": [],
+      "description": ""
+    },
+    {
+      "id": "photo-17",
+      "title": "",
+      "category": "Photography",
+      "location": "",
+      "year": "",
+      "services": [],
+      "coverImage": "/images/photography/IMG_0017.PNG",
+      "images": ["/images/photography/IMG_0017.PNG"],
+      "videos": [],
+      "externalVideos": [],
+      "description": ""
+    },
+    {
+      "id": "photo-18",
+      "title": "",
+      "category": "Photography",
+      "location": "",
+      "year": "",
+      "services": [],
+      "coverImage": "/images/photography/IMG_0018.PNG",
+      "images": ["/images/photography/IMG_0018.PNG"],
+      "videos": [],
+      "externalVideos": [],
+      "description": ""
+    }
+  ]
+}

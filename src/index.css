@@ -1,0 +1,184 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink-950: #0a0a0c;
+  --color-ink-900: #0f0f12;
+  --color-ink-800: #16161a;
+  --color-ink-700: #1d1d22;
+  --color-cream: #f2ede4;
+  --color-muted: #9b978f;
+  --color-gold-200: #efdcb0;
+  --color-gold-300: #e3c98f;
+  --color-gold-400: #d4b475;
+  --color-gold-500: #c9a96a;
+  --font-display: "Cormorant Garamond", "Georgia", "Times New Roman", serif;
+  --font-body: "Manrope", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+@layer base {
+  html {
+    color-scheme: dark;
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-ink-950 font-body text-cream antialiased;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+  }
+  ::selection {
+    background-color: #c9a96a;
+    color: #0a0a0c;
+  }
+  ::-webkit-scrollbar {
+    width: 9px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0a0a0c;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #26262b;
+    border-radius: 99px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(201, 169, 106, 0.45);
+  }
+  :focus-visible {
+    outline: 1px solid rgba(201, 169, 106, 0.65);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+  img,
+  video {
+    max-width: 100%;
+  }
+}
+
+@layer components {
+  .container-x {
+    @apply mx-auto w-full max-w-[1440px] px-5 sm:px-8 lg:px-14;
+  }
+  .overline {
+    @apply text-[11px] font-medium uppercase tracking-[0.35em] text-gold-500;
+  }
+  .btn-primary {
+    @apply inline-flex cursor-pointer items-center gap-3 rounded-full bg-cream px-8 py-4 text-[11px] font-semibold uppercase tracking-[0.25em] text-ink-950 transition-colors duration-400 hover:bg-gold-400;
+  }
+  .btn-outline {
+    @apply inline-flex cursor-pointer items-center gap-3 rounded-full border border-white/20 px-8 py-4 text-[11px] font-semibold uppercase tracking-[0.25em] text-cream transition-colors duration-400 hover:border-gold-500/70 hover:text-gold-300;
+  }
+  .chip {
+    @apply inline-flex items-center rounded-full border border-white/10 bg-white/[0.03] px-4 py-2 text-[10px] uppercase tracking-[0.2em] text-cream/75;
+  }
+  .skip-link {
+    @apply sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[600] focus:rounded-full focus:bg-gold-500 focus:px-5 focus:py-3 focus:text-[11px] focus:uppercase focus:tracking-widest focus:text-ink-950;
+  }
+  .no-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .link-underline {
+    position: relative;
+  }
+  .link-underline::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    height: 1px;
+    width: 100%;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .link-underline:hover::after,
+  .link-underline:focus-visible::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}
+
+/* Cinematic film grain — static, one layer, no repaint cost */
+.grain {
+  position: fixed;
+  inset: 0;
+  z-index: 450;
+  pointer-events: none;
+  opacity: 0.05;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.6'/%3E%3C/svg%3E");
+}
+
+/* Slow Ken Burns drift for the hero image */
+.kenburns {
+  animation: kenburns 24s ease-in-out infinite alternate;
+  will-change: transform;
+}
+@keyframes kenburns {
+  from {
+    transform: scale(1.04);
+  }
+  to {
+    transform: scale(1.12);
+  }
+}
+
+/* Gold corner brackets for the showreel frame */
+.frame-corner {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  border: 0 solid rgba(201, 169, 106, 0.55);
+  z-index: 10;
+  pointer-events: none;
+}
+.frame-corner.tl {
+  top: 14px;
+  left: 14px;
+  border-top-width: 1px;
+  border-left-width: 1px;
+}
+.frame-corner.tr {
+  top: 14px;
+  right: 14px;
+  border-top-width: 1px;
+  border-right-width: 1px;
+}
+.frame-corner.bl {
+  bottom: 14px;
+  left: 14px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+}
+.frame-corner.br {
+  bottom: 14px;
+  right: 14px;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+}
+
+/* Custom cursor replaces the native one on fine pointers only */
+@media (pointer: fine) {
+  html.custom-cursor,
+  html.custom-cursor * {
+    cursor: none !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .kenburns {
+    animation: none;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
